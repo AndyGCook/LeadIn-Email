@@ -1,0 +1,77 @@
+@import "ink"
+
+$light-orange: #FFEFE6
+$orange: #FDD8C0
+$dark-orange: #A43700
+
+$light-blue: #DEEDF8
+$blue: #C9E1F3
+$dark-blue: #153D60
+
+.lead-name
+  padding: 0
+
+.lead-top-info
+  padding: 0
+  color: #666
+
+
+table[class="body"] .container
+  
+  @media only screen and (max-width: 600px)
+    &.main
+      width: 100%!important
+
+.section-title
+  padding: 30px 0px 10px 20px
+
+.section
+
+  .columns td
+    padding: 10px 20px
+
+    &.expander
+      border: 0
+
+    &.section-header
+      padding: 15px 20px
+  
+  .wrapper
+    padding: 0
+
+  .form-field
+    padding: 3px 0 0
+
+  .form-field-label
+    font-size: 12px
+    font-weight: bold
+    padding: 0
+    letter-spacing: 1px  
+  
+  &.form-submission
+    background-color: $light-blue
+    
+    .columns td
+      border-bottom: 1px solid $blue  
+
+    .section-header
+      background-color: $blue
+      
+      h3
+        color: $dark-blue
+
+  &.lead-history
+    background-color: $light-orange
+    
+    .columns td
+      border-bottom: 1px solid $orange  
+
+    .section-header
+      background-color: $orange
+      
+      h3
+        color: $dark-orange
+
+  + .section
+    margin-top: 20px
+
